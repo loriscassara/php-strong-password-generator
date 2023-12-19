@@ -1,6 +1,9 @@
 <!-- php variables -->
 <?php 
 
+    include('functions.php');
+
+    /*
     //Array letters
     $letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
@@ -21,11 +24,13 @@
 
     //Password generate
     $password = '';
-
+    
+    
     for ($i = 0; $i < $passwordLenght; $i++){
         $character = $passwordGen[array_rand($passwordGen)];
         $password .= $character;
     }
+    */
 
 ?>
 
@@ -52,7 +57,7 @@
         
         <div class="password-container text-center">
             <?php 
-                echo '<p>' . $password . '</p>';
+                echo '<p>' . passwordGenerator($passwordLenght, $passwordElements) . '</p>';
             ?>
         </div>
 
