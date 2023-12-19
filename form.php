@@ -27,9 +27,27 @@
 		    <form action="password.php" class="pt-5">
   			    <div class="mb-3">
     			    <label for="passLenght" class="form-label">Lunghezza Password:</label>
-    			    <input type="number" class="form-control" id="password-lenght" name="passLenght" aria-describedby="emailHelp" placeholder="Password Lenght.." min="4"       max="32" style="width: 35%; margin: 0 auto;">
+    			    <input type="number" class="form-control" id="password-lenght" name="passLenght" aria-describedby="emailHelp" placeholder="Password Lenght.." min="4"    max="10" style="width: 35%; margin: 0 auto;">
   			    </div>
-  			    <button type="submit" class="btn btn-primary">Invia</button>
+               <div class="form-check">
+                    <input type="checkbox" value="1" id="flexCheckDefault" name[]="onlyNumbers">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Solo numeri
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="2" id="flexCheckDefault" name[]="onlyLetters">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Solo lettere
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="3" id="flexCheckDefault" name[]="onlySymbols">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Solo simboli
+                    </label>
+                </div>
+  			    <button type="submit" class="btn btn-primary mt-4">Invia</button>
 		    </form>
 	    </div>
 
